@@ -1,2 +1,5 @@
 node_modules/
 bun.lockb
+packages/bun/lib
+packages/core/lib
+lerna-debug.log

@@ -1,6 +1,6 @@
 {
 	"name": "@vynxc/appwrite-utils-bun",
-	"version": "1.0.0",
+	"version": "0.0.2",
 	"main": "lib/index.ts",
 	"scripts": {
 		"build": "tsc",

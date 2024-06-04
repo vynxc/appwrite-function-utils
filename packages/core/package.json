@@ -1,8 +1,9 @@
 {
 	"name": "@vynxc/appwrite-utils",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"main": "lib/index.js",
 	"typings": "lib/index.d.ts",
+	"type": "module",
 	"files": [
 		"lib"
 	],
@@ -12,9 +13,5 @@
 	"scripts": {
 		"tsc": "tsc",
 		"test": "echo \"Error: run tests from root\" && exit 1"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"typescript": "^4.3.5"
 	}
 }
