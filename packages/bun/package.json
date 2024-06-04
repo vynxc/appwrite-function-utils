@@ -1,0 +1,21 @@
+{
+	"name": "@vynxc/appwrite-utils-bun",
+	"version": "1.0.0",
+	"main": "lib/index.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest"
+	},
+	"peerDependencies": {
+		"elysia": "^1.0.22"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.1.3",
+		"jest": "^27.0.6",
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"@vynxc/appwrite-utils": "link:../core",
+		"hono": "^4.4.3"
+	}
+}
