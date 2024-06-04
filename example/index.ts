@@ -1,12 +1,23 @@
-import { Context } from "@vynxc/appwrite-utils";
-import { ElysiaAppwrite } from "./elysia";
+import { Context, toRequest, toResponse } from "@vynxc/appwrite-utils";
+import Elysia from "elysia";
+import { ILogger } from "./types";
 
-const elysiahandler = new ElysiaAppwrite();
-elysiahandler.app.get("/elysia", ({ logger }) => {
+let logger: ILogger = {
+	error: console.error,
+	log: console.log,
+};
+
+const app = new Elysia();
+
+app.get("/elysia", () => {
 	logger.log("Hello logs from Elysia");
 	logger.error("Hello errors from Elysia");
 	return "Hello Elysia";
 });
 export default async function (ctx: Context) {
-	return await elysiahandler.handle(ctx);
+	logger.log = ctx.log;
+	logger.error = ctx.error;
+
+	const resp = await app.handle(toRequest(ctx.req));
+	return await toResponse(resp);
 }
