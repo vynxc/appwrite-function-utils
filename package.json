@@ -2,14 +2,7 @@
 	"name": "root",
 	"private": true,
 	"version": "0.0.1",
-	"scripts": {
-		"pub": "lerna publish"
-	},
 	"workspaces": [
 		"packages/*"
-	],
-	"dependencies": {},
-	"devDependencies": {
-		"lerna": "^8.1.3"
-	}
+	]
 }
