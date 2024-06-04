@@ -12,6 +12,6 @@
 	"dependencies": {
 		"elysia": "^1.0.22",
 		"hono": "^4.4.3",
-		"@vynxc/appwrite-function-utils": "1.0.0"
+		"@vynxc/appwrite-utils": "1.0.0"
 	}
 }
