@@ -1,0 +1,25 @@
+{
+	"name": "@vynxc/appwrite-utils-elysia",
+	"version": "1.0.2",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
+	"type": "module",
+	"files": [
+		"lib"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"tsc": "tsc",
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	},
+	"peerDependencies": {
+		"@elysiajs/eden": "^1.0.14",
+		"appwrite": "^15.0.0"
+	},
+	"devDependencies": {
+		"elysia": "^1.0.22",
+		"typescript": "5.4.5"
+	}
+}
